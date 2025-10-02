@@ -1,0 +1,24 @@
+{
+  "name": "odin-restaurant-page",
+  "version": "1.0.0",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/huekoh/odin-restaurant-page.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/huekoh/odin-restaurant-page/issues"
+  },
+  "homepage": "https://github.com/huekoh/odin-restaurant-page#readme",
+  "description": "An project made with Javascript, HTML, CSS and bundled with webpack",
+  "devDependencies": {
+    "cli": "^1.0.1",
+    "webpack": "^5.102.0"
+  }
+}
