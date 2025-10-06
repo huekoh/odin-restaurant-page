@@ -3,18 +3,18 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   mode: "development",
-  entry: "./src/script.js",
+  entry: "./src/index.js",
   output: {
-    filename: "main,js",
+    filename: "main.js",
     path: path.resolve(__dirname, "dist"),
     clean: true,
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: "./src/index.html",
+      template: "./src/template.html",
     }),
   ],
-  modules: {
+  module: {
     rules: [
       {
         test: /\.css$/i,
