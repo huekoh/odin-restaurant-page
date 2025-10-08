@@ -54,5 +54,10 @@ button {
 }
 
 header {
+  padding: 1.5rem 1rem;
+
   display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
 }
