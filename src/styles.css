@@ -54,9 +54,14 @@ button {
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
+body {
+  overflow-x: scroll;
+  min-width: 1513px;
+}
+
 header {
-  padding: 0rem 2rem;
-  padding-top: 3rem;
+  padding-top: 2rem;
+  padding-left: 2rem;
 
   display: flex;
   justify-content: center;
@@ -65,16 +70,19 @@ header {
 }
 
 header h1 {
-  font-size: 4rem;
+  margin-right: auto;
+  min-width: fit-content;
+  font-size: 4.5rem;
   text-align: end;
 }
 
 header nav {
   margin-left: auto;
   margin-top: auto;
+  width: 582px;
 
   display: flex;
-  gap: 1rem;
+  justify-content: space-between;
 }
 
 nav button {
@@ -82,10 +90,11 @@ nav button {
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
 
-  padding: 0.85rem 1.5rem;
+  padding: 0.85rem 3.5rem;
   background-color: var(--main-color);
 
-  font-size: var(--text-med);
+  font-size: var(--text-lg);
+  font-weight: var(--font-semibold);
 }
 
 #content {
@@ -141,13 +150,22 @@ img {
 }
 
 .text-a {
-  padding: 2rem 2rem;
+  padding: 2.5rem 2rem;
   background-color: #3fa79c;
   flex: 1;
 }
 
 .text-b {
-  padding: 2rem 2rem;
+  padding: 2.5rem 3.5rem;
   background-color: var(--main-color);
   flex: 1;
+}
+
+h5 {
+  font-size: var(--text-med);
+  font-weight: var(--font-semibold);
+}
+
+p {
+  font-size: var(--text-med);
 }
