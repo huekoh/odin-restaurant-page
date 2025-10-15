@@ -1,5 +1,6 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const CopyWebpackPlugin = require("copy-webpack-plugin");
 
 module.exports = {
   mode: "development",
@@ -13,6 +14,14 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: "./src/template.html",
     }),
+    new CopyWebpackPlugin({
+      patterns: [
+        {
+          from: "src/assets",
+          to: "assets",
+        },
+      ],
+    }),
   ],
   module: {
     rules: [
@@ -23,9 +32,6 @@ module.exports = {
       {
         test: /\.html$/i,
         loader: "html-loader",
-        options: {
-          attrs: [":src"],
-        },
       },
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
