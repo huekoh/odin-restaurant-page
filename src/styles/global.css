@@ -89,8 +89,19 @@ nav button {
   border-top-right-radius: 0.5rem;
 
   padding: 0.85rem 3.5rem;
-  background-color: var(--main-color);
 
   font-size: var(--text-lg);
   font-weight: var(--font-semibold);
+}
+
+#home {
+  background-color: var(--main-color);
+}
+
+#menu {
+  background-color: #3fa79c;
+}
+
+#about {
+  background-color: #f866b7;
 }
