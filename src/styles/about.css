@@ -1,0 +1,20 @@
+p {
+  font-size: var(--text-med);
+}
+
+.about {
+  padding: 80px 0;
+}
+
+.about-card {
+  width: 65%;
+  height: 540px;
+
+  box-sizing: border-box;
+  border-radius: 20px;
+  border-style: none;
+
+  background-color: white;
+
+  padding: 64px 128px;
+}
