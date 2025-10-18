@@ -2,13 +2,19 @@ import "../styles/home.css";
 
 export default function renderHome() {
   const content = document.getElementById("content");
+  content.classList.add("home");
+  content.style.backgroundColor = "var(--home-color)";
   content.innerHTML = "";
+
+  const gridContainer = document.createElement("div");
+  gridContainer.classList.add("grid-container");
 
   const colOne = createColumnOne();
   const colTwo = createColumnTwo();
   const colThree = createColumnThree();
 
-  content.append(colOne, colTwo, colThree);
+  gridContainer.append(colOne, colTwo, colThree);
+  content.append(gridContainer);
 }
 
 function createColumnOne() {

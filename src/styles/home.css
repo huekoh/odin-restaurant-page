@@ -1,73 +1,67 @@
-#content {
-  background-color: var(--main-color);
-  min-width: auto;
-  height: 88vh;
-}
-
-.grid-container {
+.home .grid-container {
   display: grid;
   grid-template-columns: 437px 494px 582px;
   height: 100%;
   overflow: hidden;
 }
 
-.flex-container {
+.home .flex-container {
   display: flex;
   flex-direction: column;
   height: 100%;
 }
 
-video {
+.home video {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center;
 }
 
-.video-a {
+.home .video-a {
   overflow: hidden;
   max-height: 400px;
 }
 
-.video-b {
+.home .video-b {
   overflow: hidden;
 }
 
-img {
+.home img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center;
 }
 
-.img-a {
+.home .img-a {
   height: 480px;
   overflow: hidden;
 }
 
-.img-b {
+.home .img-b {
   height: 265px;
   overflow: hidden;
 }
 
-.text-a {
+.home .text-a {
   padding: 2.5rem 2rem;
   background-color: #3fa79c;
   flex: 1;
 }
 
-.text-a h5 {
+.home .text-a h5 {
   font-size: var(--text-med);
   font-weight: var(--font-semibold);
 }
 
-.text-b {
+.home .text-b {
   padding: 2.5rem 3.5rem;
   background-color: var(--main-color);
   flex: 1;
 }
 
-.text-a p,
-.text-b p {
+.home .text-a p,
+.home .text-b p {
   font-size: var(--text-med);
 }

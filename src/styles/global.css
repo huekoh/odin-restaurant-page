@@ -18,7 +18,9 @@
   --font-semibold: 600;
   --font-bold: 700;
 
-  --main-color: rgb(240, 185, 84);
+  --home-color: rgb(240, 185, 84);
+  --menu-color: #3fa79c;
+  --about-color: #f866b7;
 }
 
 h1,
@@ -94,14 +96,20 @@ nav button {
   font-weight: var(--font-semibold);
 }
 
+#content {
+  background-color: var(--home-color);
+  min-width: auto;
+  height: 88vh;
+}
+
 #home {
-  background-color: var(--main-color);
+  background-color: var(--home-color);
 }
 
 #menu {
-  background-color: #3fa79c;
+  background-color: var(--menu-color);
 }
 
 #about {
-  background-color: #f866b7;
+  background-color: var(--about-color);
 }
