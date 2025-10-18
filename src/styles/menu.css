@@ -5,6 +5,10 @@ img {
   object-position: center;
 }
 
+p {
+  font-size: var(--text-med);
+}
+
 .menu .grid-container {
   padding: 120px 0;
 
@@ -29,8 +33,9 @@ img {
   background-color: white;
 
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 40px;
 }
 
 .menu .food-card-big > .img-container {
@@ -44,6 +49,7 @@ img {
 
 .menu .food-card-big.long {
   flex-direction: column;
+  gap: 20px;
 }
 
 .menu .food-card-big > .img-container.long {
@@ -52,7 +58,16 @@ img {
 }
 
 .menu .food-card-big > .text-container {
-  width: 420px;
+  padding-top: 16px;
+  width: 330px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.menu .food-card-big > .text-container.long {
+  padding-top: 0;
+  width: 680px;
 }
 
 .menu .food-card-small {
@@ -66,7 +81,8 @@ img {
 
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
+  gap: 20px;
   align-items: center;
 }
 
@@ -80,5 +96,10 @@ img {
 }
 
 .menu .food-card-small > .text-container {
-  width: 300px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
