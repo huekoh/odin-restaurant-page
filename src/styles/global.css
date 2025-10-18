@@ -99,7 +99,9 @@ nav button {
 #content {
   background-color: var(--home-color);
   min-width: auto;
-  height: 88vh;
+  display: flex;
+  justify-content: center;
+  overflow-y: scroll;
 }
 
 #home {

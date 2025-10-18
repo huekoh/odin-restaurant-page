@@ -2,6 +2,7 @@ import "../styles/home.css";
 
 export default function renderHome() {
   const content = document.getElementById("content");
+  content.className = "";
   content.classList.add("home");
   content.style.backgroundColor = "var(--home-color)";
   content.innerHTML = "";
