@@ -55,8 +55,8 @@ button {
 }
 
 body {
-  overflow-x: scroll;
-  min-width: 1513px;
+  min-width: 1200px;
+  overflow-x: auto;
 }
 
 header {

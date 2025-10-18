@@ -1,8 +1,7 @@
 .home .grid-container {
   display: grid;
-  grid-template-columns: 437px 494px 582px;
+  grid-template-columns: 437fr 494fr 582fr;
   height: 100%;
-  overflow: hidden;
 }
 
 .home .flex-container {
